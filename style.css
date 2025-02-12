@@ -32,3 +32,11 @@ main{
   font-family: Montserrat, Arial;
   letter-spacing: 0.4rem;
 }
+.itemNameContainer{
+  margin-bottom: 1.25rem;
+}
+.itemName{
+  font-family: Fraunces;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
