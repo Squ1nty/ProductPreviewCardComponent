@@ -40,3 +40,13 @@ main{
   font-size: 2.3rem;
   font-weight: 700;
 }
+.itemDescContainer{
+  margin-bottom: 2rem;
+
+  width: 96%;
+}
+.itemDesc{
+  font-family: Montserrat, Arial;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
