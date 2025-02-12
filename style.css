@@ -13,14 +13,17 @@ body{
 main{
   background-color: hsl(0, 0%, 100%);
   border-radius: 1rem;
+  overflow: hidden;
 }
 .imgContainer{
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .itemImg{
   max-inline-size: 100%;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  block-size: auto;
+  flex-grow: 1;
 }
 .textContainer{
   padding: calc(1vw + 0.5rem) calc(1vw + 1.75rem) calc(1vw + 1.75rem) calc(1vw + 1.75rem);
@@ -75,9 +78,12 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: 100%;
 }
 .addToCartBtn{
   padding: calc(1vw + 0.75rem) calc(1vw + 6.75rem);
+  width: 100%;
   border: none;
   background-color: hsl(158, 36%, 37%);
   color: white;
@@ -85,6 +91,8 @@ main{
   border-radius: 0.5rem;
 
   display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 .addToCartBtn:hover{
