@@ -85,6 +85,10 @@ main{
   border-radius: 0.5rem;
 
   display: flex;
+  cursor: pointer;
+}
+.addToCartBtn:hover{
+  background-color: hsl(158, 38%, 21%);
 }
 .btnText{
   padding-left: 0.75rem;
