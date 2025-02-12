@@ -12,6 +12,7 @@ body{
 
 main{
   background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
 }
 .itemImg{
   max-inline-size: 100%;
