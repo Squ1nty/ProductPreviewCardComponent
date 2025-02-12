@@ -12,6 +12,13 @@ body{
 main{
   background-color: hsl(0, 0%, 100%);
 }
+.imgContainer{
+}
+.itemImg{
+  max-inline-size: 100%;
+  block-size: auto;
+  object-fit: contain;
+}
 
 .textContainer{
   padding: calc(1vw + 1.2rem);
