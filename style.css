@@ -5,8 +5,14 @@
 
 body{
   background-color: hsl(30, 38%, 92%);
+
+  padding: calc(1vw + 1.5rem) calc(1vw + 0.8rem);
 }
 
 main{
   background-color: hsl(0, 0%, 100%);
+}
+
+.textContainer{
+  padding: calc(1vw + 1.2rem);
 }
