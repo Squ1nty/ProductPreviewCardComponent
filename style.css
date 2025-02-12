@@ -29,6 +29,7 @@ main{
 .itemCategory{
   font-family: Montserrat, Arial;
   letter-spacing: 0.4rem;
+  font-size: 0.9rem;
 }
 .itemNameContainer{
   margin-bottom: 1.25rem;
