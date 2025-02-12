@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  font-size: 14px;
 }
 
 body{
@@ -22,5 +23,12 @@ main{
 }
 
 .textContainer{
-  padding: calc(1vw + 1.2rem);
+  padding: 0 calc(1vw + 1.2rem) calc(1vw + 1.2rem) calc(1vw + 1.2rem);
+}
+.itemCategoryContainer{
+  margin: 0.8rem 0;
+}
+.itemCategory{
+  font-family: Montserrat, Arial;
+  letter-spacing: 0.4rem;
 }
