@@ -1,39 +1,49 @@
 *{
   margin: 0;
   padding: 0;
-  font-size: 14px;
 }
-
 body{
-  background-color: hsl(30, 38%, 92%);
-  padding: calc(1vw + 1.5rem) calc(1vw + 0.8rem);
+  background-color: hsl(30 38% 92%);
+  padding: calc(1vw + 3rem);
 }
+.flexContainer{
+  display: grid;
+  place-items: center;
 
+  height: 100dvh;
+}
 main{
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 1rem;
-  overflow: hidden;
+  background-color: hsl(0 0% 100%);
 
+  overflow: hidden;
+  border-radius: 10px;
+  
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  height: 100vh;
+  flex-direction: column;
+}
+.textContainer{
+  display: inline-block;
+  padding: calc(1vw + 0.5rem) calc(1vw + 1.25rem) calc(1vw + 1.25rem) calc(1vw + 1.25rem);
+}
+img{
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 .imgContainer{
-  display: inline-block;
+  width: 100%;
 }
 .mobileItemImg{
-  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 .desktopItemImg{
   display: none;
 }
-.textContainer{
-  display: inline-block;
-  padding: calc(1vw + 0.5rem) calc(1vw + 1.75rem) calc(1vw + 1.75rem) calc(1vw + 1.75rem);
-}
+
+/* Old Code */
 .itemCategoryContainer{
   margin: 0.8rem 0;
 }
@@ -50,10 +60,9 @@ main{
   font-size: 2.3rem;
   font-weight: 700;
 }
+
 .itemDescContainer{
   margin-bottom: 2rem;
-
-  width: 96%;
 }
 .itemDesc{
   font-family: Montserrat, Arial;
@@ -80,16 +89,14 @@ main{
   text-decoration: line-through;
   color:hsl(228, 12%, 48%)
 }
+
 .addToCartContainer{
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 100%;
 }
 .addToCartBtn{
   padding: calc(1vw + 0.75rem) calc(1vw + 6.75rem);
-  width: 100%;
   border: none;
   background-color: hsl(158, 36%, 37%);
   color: white;
@@ -112,19 +119,22 @@ main{
 
 @media(min-width: 1281px){
   body{
-    padding: 0;
+    padding: 0 15rem;
   }
   main{
     flex-direction: row;
+  }
+  .imgContainer{
+    width: 50%;
   }
   .mobileItemImg{
     display: none;
   }
   .desktopItemImg{
-    display: inline-block;
-    width: 100%;
+    display: block;
+    object-fit: cover;
   }
   .textContainer{
-    width: 18.5%;
+    max-width: 50%;
   }
 }

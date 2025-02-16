@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style.css">
+  <!-- <link rel="stylesheet" href="./style.css">  <-- Original CSS File-->
+  <link rel="stylesheet" href="./styleTest.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,38 +16,41 @@
 
 </head>
 <body>
-  <main>
-    <div class="imgContainer">
-      <img class="itemImg" src="./images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum Image">
-    </div>
-    <div class="textContainer">
-      <div class="itemCategoryContainer">
-        <p class="itemCategory">PERFUME</p>
+  <div class="flexContainer">
+    <main>
+      <div class="imgContainer">
+        <img class="mobileItemImg" src="./images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum Image">
+        <img class="desktopItemImg" src="./images/image-product-desktop.jpg" alt="Gabrielle Essence Eau De Parfum Image">
       </div>
-      <div class="itemNameContainer">
-        <h1 class="itemName">Gabrielle Essence Eau De Parfum</h1>
-      </div>
-      <div class="itemDescContainer">
-        <p class="itemDesc">
-          A floral, solar and voluptuous interpretation composed 
-          by Olivier Polge, Perfumer-Creator for the House of CHANEL.
-        </p>
-      </div>
-      <div class="itemPriceContainer">
-        <div class="discountedPriceContainer">
-          <p class="discountedPrice">$149.99</p>
+      <div class="textContainer">
+        <div class="itemCategoryContainer">
+          <p class="itemCategory">PERFUME</p>
         </div>
-        <div class="originalPriceContainer">
-          <p class="originalPrice">$169.99</p>
+        <div class="itemNameContainer">
+          <h1 class="itemName">Gabrielle Essence Eau De Parfum</h1>
+        </div>
+        <div class="itemDescContainer">
+          <p class="itemDesc">
+            A floral, solar and voluptuous interpretation composed 
+            by Olivier Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+        </div>
+        <div class="itemPriceContainer">
+          <div class="discountedPriceContainer">
+            <p class="discountedPrice">$149.99</p>
+          </div>
+          <div class="originalPriceContainer">
+            <p class="originalPrice">$169.99</p>
+          </div>
+        </div>
+        <div class="addToCartContainer">
+          <button class="addToCartBtn">
+            <img class="cartIcon" src="./images/icon-cart.svg" alt="Cart Icon">
+            <p class="btnText">Add to Cart</p>
+          </button>
         </div>
       </div>
-      <div class="addToCartContainer">
-        <button class="addToCartBtn">
-          <img class="cartIcon" src="./images/icon-cart.svg" alt="Cart Icon">
-          <p class="btnText">Add to Cart</p>
-        </button>
-      </div>
-    </div>
-  </main>
+    </main>
+  </div>
 </body>
 </html>
